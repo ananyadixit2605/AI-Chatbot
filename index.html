@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="padding:8px;display:flex;gap:8px;">
+  <button id="newChatBtn" style="padding:6px 12px;">+ New Chat</button>
+  <button id="chatListBtn" style="padding:6px 12px;">☰ Chats</button>
+</div>
+<div id="chatListPanel" style="display:none;position:absolute;background:#222;color:white;z-index:10;border-radius:8px;max-width:250px;"></div>
+
+    <div class="chatbot-container">
+
+    <div class="ai-chat-box">
+       <img src="businessman.png" id="aiImage" width="50"> 
+       <div class="ai-chat-area">
+    Hello! How Can I Help you Today?
+    </div> 
+     <img src="loading.png" alt="" class="load" width="50px"> 
+       </div>
+  </div>         
+    
+    <div class="prompt-area">
+        <input type="text"  id="prompt" placeholder="Message...">      
+        <button id="image"><img src="image.png" alt="Attach" width="20"></button>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+        <button id="mic"><img src="microphone-black-shape.png" alt="voice input" width="20"></button>
+        <button id="submit"><img src="up-arrow.png" alt="Send" width="20"></button>
+    </div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>    
+</html> 
