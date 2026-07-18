@@ -30,7 +30,7 @@ fileInput.addEventListener("change", () => {
 
 const Api_Url =
 "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent";
-const streamApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:streamGenerateContent?alt=sse";
+const streamApiUrl= "/api/gemini";
 let user={
     data:null,
 }
@@ -184,7 +184,6 @@ let RequestOption = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-goog-api-key": API_KEY
     },
     body: JSON.stringify({
       contents: conversationHistory
