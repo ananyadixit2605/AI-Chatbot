@@ -3,6 +3,7 @@
 ## Overview
 This project is an AI-powered chatbot developed using HTML, CSS, and JavaScript with Gemini API integration. It provides real-time AI conversations through a clean and responsive interface.
 
+🔗 **Live Demo:** https://ai-chatbot-gilt-ten.vercel.app
 
 ## Features
 ✅ AI-powered conversations (Gemini API, streamed responses)
